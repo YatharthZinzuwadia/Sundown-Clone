@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import Image from "next/image";
 
 const projects = [
   {
@@ -78,13 +79,11 @@ export default function Home() {
         {/* PAGE 1 */}
         <section id="page1">
           <nav>
-            <img
+            <Image
               src="https://uploads-ssl.webflow.com/64d3dd9edfb41666c35b15b7/64d3dd9edfb41666c35b15c2_Sundown%20logo.svg"
               alt="Sundown Studio"
-              style={{
-                opacity: menuOpen ? 0 : 1,
-                transition: "opacity 0.2s ease",
-              }}
+              width={180}
+              height={60}
             />
 
             <div id="nav-part2">
@@ -171,9 +170,11 @@ export default function Home() {
             </h1>
 
             <div id="bottom-part2">
-              <img
+              <Image
                 src="https://uploads-ssl.webflow.com/64d3dd9edfb41666c35b15b7/64d3dd9edfb41666c35b15d1_Holding_thumb-p-500.jpg"
                 alt="Sundown Studio"
+                width={500}
+                height={500}
               />
 
               <p>
